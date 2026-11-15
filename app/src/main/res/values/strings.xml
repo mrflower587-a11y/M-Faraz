@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Double Tap Flashlight</string>
+    <string name="app_subtitle">Volume-Button Torch Control</string>
+
+    <!-- Accessibility Service Metadata -->
+    <string name="accessibility_service_label">Double Tap Flashlight Key Listener</string>
+    <string name="accessibility_service_summary">Listens only for physical Volume Up and Volume Down double-presses to toggle the LED flashlight.</string>
+    <string name="accessibility_service_description">Double Tap Flashlight uses this service exclusively to detect rapid double-presses on your physical Volume Up (turn ON) and Volume Down (turn OFF) buttons while other apps are open. It does NOT read screen content, capture text, or collect personal data.</string>
+
+    <!-- Status Badges -->
+    <string name="flashlight_status_on">FLASHLIGHT ON</string>
+    <string name="flashlight_status_off">FLASHLIGHT OFF</string>
+    <string name="flashlight_status_unavailable">TORCH UNAVAILABLE</string>
+    <string name="flashlight_status_no_hardware">NO FLASH HARDWARE</string>
+
+    <string name="permission_camera_title">Camera Permission</string>
+    <string name="permission_camera_granted">Granted</string>
+    <string name="permission_camera_denied">Required</string>
+    <string name="permission_camera_rationale">Camera permission is used solely to access the device LED torch via Camera2 API. No photos or videos are ever captured.</string>
+    <string name="action_grant_camera">Grant Camera</string>
+
+    <string name="service_status_title">Volume Shortcut Service</string>
+    <string name="service_status_enabled">Active</string>
+    <string name="service_status_interrupted">Interrupted</string>
+    <string name="service_status_disabled">Disabled</string>
+    <string name="service_status_paused">Paused</string>
+    <string name="action_enable_accessibility">Enable Accessibility Service</string>
+    <string name="action_open_accessibility_settings">Open Accessibility Settings</string>
+
+    <!-- Primary Controls -->
+    <string name="action_turn_on">Turn ON</string>
+    <string name="action_turn_off">Turn OFF</string>
+    <string name="action_test_flashlight">Test Flashlight</string>
+    <string name="action_settings">Settings &amp; Guide</string>
+
+    <!-- Shortcuts Card -->
+    <string name="shortcuts_section_title">Volume Button Shortcuts</string>
+    <string name="shortcut_vol_up_title">Double Press Volume UP</string>
+    <string name="shortcut_vol_up_desc">Turns ON the LED flashlight immediately</string>
+    <string name="shortcut_vol_down_title">Double Press Volume DOWN</string>
+    <string name="shortcut_vol_down_desc">Turns OFF the LED flashlight immediately</string>
+    <string name="shortcut_normal_volume_note">Normal volume adjustments and long-presses continue working normally.</string>
+
+    <!-- Consent Dialog -->
+    <string name="consent_dialog_title">Accessibility Permission Disclosure</string>
+    <string name="consent_dialog_body">To detect physical Volume Up and Volume Down button presses while other apps are open or on the lock screen, Double Tap Flashlight requires Android Accessibility Service access.\n\nPrivacy Guarantee:\n• Monitors ONLY Volume Up and Volume Down key events.\n• Cannot and does NOT read your screen content.\n• Does NOT record audio, contacts, location, or keystrokes.\n• Works 100% offline with zero data collection.\n\nNote: This is a hardware shortcut utility, not a disability screen-reader service.</string>
+    <string name="consent_checkbox_label">I understand how the Volume Key Service works and consent to enabling it.</string>
+    <string name="action_continue_to_settings">Continue to Settings</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Settings & Diagnostics -->
+    <string name="settings_title">Settings &amp; Behavior</string>
+    <string name="settings_timing_title">Double-Press Speed Window</string>
+    <string name="settings_timing_subtitle">Maximum interval between two presses of the same volume button.</string>
+    <string name="settings_timing_value_ms">%1$d ms</string>
+    <string name="settings_timing_default">Default (%1$d ms)</string>
+    <string name="settings_pause_title">Pause Volume Shortcuts</string>
+    <string name="settings_pause_subtitle">Temporarily ignore volume button double-presses without disabling Accessibility.</string>
+    <string name="settings_haptic_title">Haptic Feedback</string>
+    <string name="settings_haptic_subtitle">Subtle vibration confirmation when a shortcut toggles the torch.</string>
+    <string name="settings_battery_title">Background &amp; Lock-Screen Guide</string>
+    <string name="settings_battery_body">• Other Apps: Works reliably whenever the screen is awake.\n• Lock Screen: Works on most Android devices once Accessibility is enabled.\n• Screen Off: Standard Android restricts hardware key delivery to Accessibility services during deep sleep. Manufacturer skins (MIUI, OneUI, ColorOS) may also pause background services unless battery optimization is set to Unrestricted.</string>
+    <string name="action_battery_settings">Battery Optimization Settings</string>
+    <string name="action_revoke_consent">Reset Privacy Consent</string>
+    <string name="action_navigate_back">Back</string>
+
+    <!-- Error Messages -->
+    <string name="error_no_flash_hardware">This device does not report a camera with LED flash hardware.</string>
+    <string name="error_camera_permission_denied">Camera permission was denied. Grant Camera access to control the flashlight.</string>
+    <string name="error_camera_in_use">The flashlight is unavailable because another app (such as Camera) is currently using the camera.</string>
+    <string name="error_torch_unavailable">Flashlight is temporarily unavailable. Close any camera apps or check device thermal limits.</string>
+    <string name="error_unsupported_android">Torch control requires Android 6.0 (API 23) or higher.</string>
+    <string name="error_accessibility_disabled">Accessibility service is disabled. Enable it to use volume button shortcuts outside this app.</string>
+    <string name="error_camera_generic">Unable to toggle flashlight: %1$s</string>
+    <string name="error_settings_launch_failed">Could not open system settings screen on this device.</string>
+    <string name="info_test_completed">Flashlight test pulse completed.</string>
+</resources>

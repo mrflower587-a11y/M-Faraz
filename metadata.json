@@ -1,0 +1,6 @@
+{
+  "name": "Double Tap Flashlight",
+  "description": "Control your phone's LED flashlight with quick double-presses on the physical volume buttons.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
